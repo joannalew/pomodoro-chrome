@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <title>Pomodoro Popup</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      
+      #title{
+        background: #eb3f37;
+        color: white;
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 100%;
+      }
+
+      #pom-image {
+        width: 100px;
+        margin: 10px;
+      }
+
+      button {
+        margin: 3px;
+        width: 100px;
+        outline: none;
+      }
+
+      #setAlarm:hover{
+        color: #5fba7d;
+        font-weight: 700;
+      }
+
+      #cancelAlarm:hover {
+        color: #eb3f37;
+        font-weight: 700;
+      }
+    </style>
+
+
+  </head>
+  <body>
+      <div id="title">Pomodoro Popup</div>
+
+      <img src='./pomodoro.png' id='pom-image'>
+      
+      <!-- <button id='sampleSecond' value='0.1'>Sample Second</button> -->
+      <button id='setAlarm' value='25' style="margin-top: -5px">Set Alarm</button>
+      <button id='cancelAlarm'>Cancel Alarm</button>
+
+   <script src="popup.js"></script>
+  </body>
+</html>
